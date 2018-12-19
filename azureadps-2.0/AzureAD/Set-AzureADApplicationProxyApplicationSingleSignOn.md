@@ -17,7 +17,7 @@ Set-AzureADApplicationProxyApplicationSingleSignOn -ObjectId <String> -SingleSig
 ```
 
 ## DESCRIPTION
-The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory. This is limited to setting No SSO, Kerberos Constrained Delegation (for applications using Integrated Windows Authentication), and Header-based SSO.
+The Set-AzureADApplicationProxyApplicationSingleSignOn cmdlet allows you to set and modify single sign-on (SSO) settings for an application configured for Application Proxy in Azure Active Directory. This is limited to setting No SSO, Kerberos Constrained Delegation (for applications using Integrated Windows Authentication), and Header-based SSO. The cmdlet must run in an elevated PowerShell session. For non-elevated PowerShell sessions Set-AzureADApplicationProxyApplicationSingleSignOn will fail with access Denied.
 
 ## EXAMPLES
 
